@@ -1,3 +1,3 @@
 ﻿# Tugas-Individu-Grafkom-A
- ## Chalvin Reza Farrel
- ## 5025221054
+ Chalvin Reza Farrel
+ 5025221054
