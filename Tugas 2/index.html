@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafika Komputer - Tugas 2 WebGL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .slider-container {
+            margin-bottom: 10px;
+        }
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .slider-label span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="c"></canvas>
+
+    <div class="slider-container">
+        <div class="slider-label">
+            <span>Translation X:</span>
+            <input type="range" id="sliderX" min="-1" max="1" step="0.01" value="0">
+            <span id="valueX">0</span>
+        </div>
+        <div class="slider-label">
+            <span>Translation Y:</span>
+            <input type="range" id="sliderY" min="-1" max="1" step="0.01" value="0">
+            <span id="valueY">0</span>
+        </div>
+        <div class="slider-label">
+            <span>Rotation:</span>
+            <input type="range" id="sliderRotation" min="0" max="360" step="1" value="0">
+            <span id="valueRotation">0</span>
+        </div>
+        <div class="slider-label">
+            <span>Scale X:</span>
+            <input type="range" id="sliderScaleX" min="0.1" max="3" step="0.1" value="1">
+            <span id="valueScaleX">1</span>
+        </div>
+        <div class="slider-label">
+            <span>Scale Y:</span>
+            <input type="range" id="sliderScaleY" min="0.1" max="3" step="0.1" value="1">
+            <span id="valueScaleY">1</span>
+        </div>
+    </div>
+
+    <script src="shape.js"></script>
+</body>
+</html>
